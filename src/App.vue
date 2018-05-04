@@ -1,7 +1,12 @@
 <template>
 	<div class="app">
 	<keep-alive :exclude="posts">
-		<router-view :groupInfo='groupInfo' :userInfo='userInfo' :loginCheck='loginCheck'></router-view>
+		<router-view 
+			:groupInfo='groupInfo' 
+			:userInfo='userInfo' 
+			:loginCheck='loginCheck'
+		>
+		</router-view>
 	</keep-alive>
 	</div>
 </template>

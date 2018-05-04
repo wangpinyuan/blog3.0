@@ -11,8 +11,9 @@ var apiRoutes = require("./router/apiRoutes");
 var port = config.port;
 var app = express();
 
-// app.use(express.static(path.join(__dirname, '../build')));
-app.set("views",path.join(__dirname,"/public"));
+// 此处切换dev/build
+app.use(express.static(path.join(__dirname, '../build')));
+// app.set("views",path.join(__dirname,"/public"));
 app.set("view engine","ejs");
 // 中间件session
 app.use(session({

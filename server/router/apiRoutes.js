@@ -7,7 +7,8 @@ const Err = 0;
 const OK = 1;
 
 apiRoutes.get('/userInfo',function(req,res){
-	userModel.findOne({name:'王品源'},function(err,user){
+	userModel.findOne({name:'Amumu'},function(err,user){
+		user.password = null;
 		res.json({
 			'style': OK,
 			'user':user

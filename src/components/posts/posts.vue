@@ -41,7 +41,7 @@ export default {
 		groupInfo: {
 			type: [Object,Array]
 		},
-		userInfo: Object,
+		userInfo: {},
 		loginCheck: [Boolean,Function]
 	},
 	activated(){
